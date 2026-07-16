@@ -1,1 +1,6 @@
-<h1> Hellow Wrold </h1>
+<h1> Hellow {{name}} </h1>
+{% if name %}
+<h1> hellow {{name}}</h1>
+{%else%}
+<h1> name not found </h1>
+{%endif%}

@@ -7,4 +7,16 @@ from django.http import HttpResponse
 # action 
 
 def say_hello(request):
-    return render(request, 'hellow.html')
+    x=12
+    y=13
+    return render(request, "hellow.html")
+
+
+
+
+def say_no(request):
+    number = 12
+    if(number>10):
+        return HttpResponse("Yes")
+    else:
+        return HttpResponse("No")
